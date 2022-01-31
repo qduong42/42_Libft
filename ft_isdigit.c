@@ -3,13 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 21:36:49 by qduong            #+#    #+#             */
-/*   Updated: 2021/05/16 23:47:04 by qduong           ###   ########.fr       */
+/*   Updated: 2022/01/03 19:44:57 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* returns 1 if digit, 0 if not
+*/
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
