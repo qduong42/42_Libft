@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 00:08:18 by qduong            #+#    #+#             */
-/*   Updated: 2021/06/09 02:46:45 by qduong           ###   ########.fr       */
+/*   Updated: 2022/04/29 16:37:28 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		(*del)(current -> content);
 		free(current);
 	}
+	*lst = NULL;
 	return ;
 }
