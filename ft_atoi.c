@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoll.c                                         :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 00:01:54 by qduong            #+#    #+#             */
-/*   Updated: 2022/01/04 14:36:05 by qduong           ###   ########.fr       */
+/*   Updated: 2021/05/28 23:13:28 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 **isspaces. Then check if first character is negative or positive, to**
 **multiply with final result*/
 
-long long	ft_atoll(const char *str)
+int	ft_atoi(const char *str)
 {
-	int			i;
-	int			is_neg;
-	long long	res;
+	int	i;
+	int	is_neg;
+	int	res;
 
 	i = 0;
 	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
@@ -33,7 +33,7 @@ long long	ft_atoll(const char *str)
 	if (is_neg == -1 || str[i] == '+')
 		i++;
 	res = 0;
-	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = (res * 10) + (str[i] - '0');
 		i++;

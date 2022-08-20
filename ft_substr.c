@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 09:53:07 by qduong            #+#    #+#             */
-/*   Updated: 2021/06/01 13:22:30 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/20 18:55:08 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//allocation is too much, not the whole length will be copied, so smth like strlen - start + 1.
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
