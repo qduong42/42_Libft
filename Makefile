@@ -6,7 +6,7 @@
 #    By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/07 20:29:17 by qduong            #+#    #+#              #
-#    Updated: 2022/08/24 20:48:15 by qduong           ###   ########.fr        #
+#    Updated: 2022/08/24 20:50:30 by qduong           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,11 +37,11 @@ $(NAME) : ${OBJS} $(BONUS_OBJS) $(GNL_OBJS)
 	ar rcs $(NAME) ${OBJS} $(BONUS_OBJS) $(GNL_OBJS)
 
 clean:
-	${RM} ${OBJS} $(BONUS_OBJS)
+	${RM} ${OBJS} $(BONUS_OBJS) $(GNL_OBJS)
 
 fclean: clean
 	${RM} $(NAME)
-	$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS) $(GNL_OBJS)
 
 re: fclean all
 
