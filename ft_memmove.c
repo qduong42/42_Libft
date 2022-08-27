@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 00:53:06 by qduong            #+#    #+#             */
-/*   Updated: 2021/06/05 19:31:13 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:23:18 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	size_t			i;
 
+	if (!dest || !src)
+		return (NULL);
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
 	i = 0;
 	if (d > s)
 	{
 		while (n)
-		{
-			n = n - 1;
-			d[n] = s[n];
-		}
+			d[--n] = s[--n];
 	}
 	else
 	{

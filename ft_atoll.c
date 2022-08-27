@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoll.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 00:01:54 by qduong            #+#    #+#             */
-/*   Updated: 2022/01/04 14:36:05 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:14:42 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ long long	ft_atoll(const char *str)
 	long long	res;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
 		||str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 		i++;

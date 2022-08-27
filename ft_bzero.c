@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 16:30:25 by qduong            #+#    #+#             */
-/*   Updated: 2021/05/24 16:30:27 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:15:33 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_bzero(void *s, size_t n)
 	void	*r;
 	size_t	m;
 
+	if (!s)
+		return (NULL);
 	r = s;
 	m = n;
 	ft_memset(r, 0, m);

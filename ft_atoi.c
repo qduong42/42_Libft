@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 00:01:54 by qduong            #+#    #+#             */
-/*   Updated: 2021/05/28 23:13:28 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:13:53 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_atoi(const char *str)
 	int	res;
 
 	i = 0;
+	if (!str)
+		return (0);
 	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
 		||str[i] == '\f' || str[i] == '\r' || str[i] == ' ')
 		i++;

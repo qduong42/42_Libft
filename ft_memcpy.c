@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qduong <qduong@student.42.fr>              +#+  +:+       +#+        */
+/*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 11:55:04 by qduong            #+#    #+#             */
-/*   Updated: 2021/11/23 20:01:53 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:18:49 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char	*lsrc;
 	size_t	i;
 
+	if (!dest || !src)
+		return (NULL);
 	lsrc = (char *) src;
 	ldest = (char *) dest;
 	i = 0;

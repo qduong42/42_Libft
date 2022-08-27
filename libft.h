@@ -6,7 +6,7 @@
 /*   By: qduong <qduong@students.42wolfsburg.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 22:56:47 by qduong            #+#    #+#             */
-/*   Updated: 2022/08/24 20:42:18 by qduong           ###   ########.fr       */
+/*   Updated: 2022/08/27 12:22:00 by qduong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,8 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_putstr_fd(char *s, int fd);
 
 void		ft_putendl_fd(char *s, int fd);
+
+int			ft_atoi(const char *str);
 
 typedef struct s_list
 {
